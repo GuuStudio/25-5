@@ -1,0 +1,19 @@
+#timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer-controls {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-section {
+    display: flex;
+    justify-content: center; 
+}
+
+#contact-section > a {
+    text-decoration: none;
+}

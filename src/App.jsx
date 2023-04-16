@@ -20,12 +20,16 @@ function App() {
       </div>
       {/* session control section end */}
       {/* timer section start */}
-      <div id="timer-label">Session</div>
-      <div id="time-left">mm:ss</div>
+      <div id="timer-section">
+        <div id="timer-label">Session</div>
+        <div id="time-left">mm:ss</div>
+      </div>
       {/* timer section end */}
       {/* timer control section */}
-      <div id="start-stop"><i class="fa-solid fa-play"></i></div>
-      <div id="reset"><i class="fa-solid fa-rotate-left"></i></div>
+      <div id="timer-controls">
+        <div id="start-stop"><i class="fa-solid fa-play"></i></div>
+        <div id="reset"><i class="fa-solid fa-rotate-left"></i></div>
+      </div>
       {/* timer control section end */}
       <Contact />
     </div>
@@ -36,6 +40,6 @@ export default App
 
 function Contact() {
   return (
-      <div>by <a target="_blank" href="https://github.com/anandxs">Anand S</a></div>
+      <div id="contact-section">by <a target="_blank" href="https://github.com/anandxs">Anand S</a></div>
   );
 }
