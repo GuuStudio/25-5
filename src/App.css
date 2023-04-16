@@ -1,6 +1,26 @@
+#wrapper {
+    width: 500px;
+    margin: auto;
+}
+
+#main-header {
+    text-align: center;
+}
+
 .stepper-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .stepper-container {
+        flex-direction: column;
+    }
 }
 
 .stepper {

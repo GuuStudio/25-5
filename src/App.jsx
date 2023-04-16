@@ -2,7 +2,8 @@ import './App.css'
 
 function App() {
   return (
-    <div>
+    <div id="wrapper">
+      <h1 id="main-header">25 + 5 Clock</h1>
       <div className="stepper-container">
         {/* break control section start */}
         <div className="stepper">
