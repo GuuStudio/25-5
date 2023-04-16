@@ -3,22 +3,24 @@ import './App.css'
 function App() {
   return (
     <div>
-      {/* break control section start */}
-      <div>
-        <label id="break-label">Break Length</label>
-        <div id="break-decrement"><i className="fa-solid fa-arrow-down"></i></div>
-        <div id="break-length">5</div>
-        <div id="break-increment"><i className="fa-solid fa-arrow-up"></i></div>
+      <div className="stepper-container">
+        {/* break control section start */}
+        <div className="stepper">
+          <label id="break-label" className="label">Break Length</label>
+          <div id="break-decrement" className="decrement"><i className="fa-solid fa-arrow-down"></i></div>
+          <div id="break-length" className="length">5</div>
+          <div id="break-increment" className="increment"><i className="fa-solid fa-arrow-up"></i></div>
+        </div>
+        {/* break control section end */}
+        {/* session control section start */}
+        <div className="stepper">
+          <label id="session-label" className="label">Session Length</label>
+          <div id="session-decrement" className="decrement"><i className="fa-solid fa-arrow-down"></i></div>
+          <div id="session-length" className="length">25</div>
+          <div id="session-increment" className="increment"><i className="fa-solid fa-arrow-up"></i></div>
+        </div>
+        {/* session control section end */}
       </div>
-      {/* break control section end */}
-      {/* session control section start */}
-      <div>
-        <label id="session-label">Session Length</label>
-        <div id="session-decrement"><i className="fa-solid fa-arrow-down"></i></div>
-        <div id="session-lenght">25</div>
-        <div id="session-increment"><i className="fa-solid fa-arrow-up"></i></div>
-      </div>
-      {/* session control section end */}
       {/* timer section start */}
       <div id="timer-section">
         <div id="timer-label">Session</div>
