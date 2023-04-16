@@ -20,6 +20,8 @@
 @media (max-width: 400px) {
     .stepper-container {
         flex-direction: column;
+        width: 200px;
+        margin: auto;
     }
 }
 
@@ -52,6 +54,16 @@
   grid-row: 2;
   grid-column: 3;
   text-align: center;
+}
+
+@media (max-width: 400px) {
+    .decrement {
+        text-align: right;
+    }
+
+    .increment {
+        text-align: left;
+    }
 }
 
 #timer-section {
