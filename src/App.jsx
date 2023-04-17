@@ -29,6 +29,11 @@ function App() {
     }
   }
 
+  function resetAllTimers() {
+    setBreakLength(5);
+    setSessionLength(25);
+  }
+
   return (
     <div id="wrapper">
       <h1 id="main-header">25 + 5 Clock</h1>
@@ -54,7 +59,7 @@ function App() {
       {/* timer control section */}
       <div id="timer-controls">
         <div id="start-stop"><i className="fa-solid fa-play"></i></div>
-        <div id="reset"><i className="fa-solid fa-rotate-left"></i></div>
+        <div id="reset" onClick={resetAllTimers}><i className="fa-solid fa-rotate-left"></i></div>
       </div>
       {/* timer control section end */}
       <Contact />
