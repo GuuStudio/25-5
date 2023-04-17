@@ -50,12 +50,7 @@ function App() {
         </div>
         {/* session control section end */}
       </div>
-      {/* timer section start */}
-      <div id="timer-section">
-        <div id="timer-label">Session</div>
-        <div id="time-left">mm:ss</div>
-      </div>
-      {/* timer section end */}
+      <Timer time={sessionLength} />
       {/* timer control section */}
       <div id="timer-controls">
         <div id="start-stop"><i className="fa-solid fa-play"></i></div>
@@ -68,6 +63,16 @@ function App() {
 }
 
 export default App
+
+function Timer(props) {
+
+  return (
+    <div id="timer-section">
+      <div id="timer-label">Session</div>
+      <div id="time-left">{props.time}:00</div>
+    </div>
+  );
+}
 
 function Contact() {
   return (
