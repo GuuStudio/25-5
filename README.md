@@ -14,4 +14,3 @@ Set a timer for each session of your activity (25 minutes by default) and also a
 
 - Add timer functionality
 - Ring beeps when each timer ends
-- Add styling
